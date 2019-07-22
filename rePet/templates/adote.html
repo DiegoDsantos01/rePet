@@ -1,96 +1,115 @@
-<!-{% extends 'index.html' %}
-
-{% load staticfiles %}
-
-{% block content %}-->
+<!-{% extends 'index.html' %} {% load staticfiles %} {% block content %}-->
 
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
-   
-           
-                
-                
+
+
+<!--                 
     
-                    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-                    <script type="text/javascript">
-                        
-                        function filtrar() {
-                            let termo = $('#pesquisa').val().toUpperCase();
-                            $('#lista li').each(function () {
-                                if ($(this).html().toUpperCase().indexOf(termo) === -1) {
-                                    $(this).hide();
-                                }
-                            });
-                        }
-                    </script>
-                </div> 
-                <form action>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        
+        function filtrar() {
+            let termo = $('#pesquisa').val().toUpperCase();
+            $('#lista li').each(function () {
+                if ($(this).html().toUpperCase().indexOf(termo) === -1) {
+                    $(this).hide();
+                }
+            });
+        }
+    </script>
+</div> 
+<form action>
+    
+    
+    <div class='pets'>
+        <ul id="lista">
+            
+            
+            
+            <li><img src="{% static 'img/gato01.jpg' %}" alt="">Nome: Fubá <p>Idade: 1 Ano</p> Femea </li>
+            <li><img src="{% static 'img/img02.jpg' %}" alt="">Nome: Tesla<p>Idade: 6 Meses</p> Macho </li>
+            <li><img src="{% static 'img/img03.jpg' %}" alt="">Nome: Blues<p>Idade: 4 Anos</p> Macho </li>
+            <li><img src="{% static 'img/img13.jpg' %}" alt="">Nome: Baco<p>Idade: 3 Anos</p> Macho </li>
+            <li><img src="{% static 'img/img15.jpg' %}" alt="">Nome: Bento<p>Idade: 5 Anos</p> Macho </li>
+            <li><img src="{% static 'img/img07.jpg' %}" alt="">Nome: Jazz<p>Idade: 2 Anos</p> Femea </li>
+            <li><img src="{% static 'img/img010.jpg' %}" alt="">Nome: Puck<p>Idade: 2 Anos</p> Femea </li>
+            <li><img src="{% static 'img/img09.jpg' %}" alt="">Nome: Tobi<p>Idade: 1 Ano</p> Macho </li>
+            <li><img src="{% static 'img/img14.jpg' %}" alt="">Nome: Guinho<p>Idade: 1 Ano</p> Macho </li>
+            <li><img src="{% static 'img/cao1.jpg' %}" alt="">Nome: Monk<p>Idade: 3 Meses</p> Macho </li>
+            <li><img src="{% static 'img/gato03.jpg' %}" alt="">Nome: Frajola<p>Idade: 1 Ano</p> Macho </li>
+            <li><img src="{% static 'img/img011.jpg' %}" alt="">Nome: Sissy<p>Idade: 6 Anos</p> Femea </li>
+            <li><img src="{% static 'img/gato02.jpg' %}" alt="">Nome: Tina<p>Idade: 9 Meses</p> Femea </li>
+            <li><img src="{% static 'img/cao.jpg' %}" alt="">Nome: Doug<p>Idade: 1 Ano</p> Macho </li>
+            <li><img src="{% static 'img/img012.png' %}" alt="">Nome: Luna<p>Idade: 3 Anos</p> Femea </li>
+            <li><img src="{% static 'img/img13.jpg' %}" alt="">Nome: Simba<p>Idade: 3 Anos</p> Macho </li>
+            <li><img src="{% static 'img/im20.jpg' %}" alt="">Nome: Bela<p>Idade: 1 Ano</p> Femea </li>
+            <li><img src="{% static 'img/im21.jpg' %}" alt="">Nome: Mafalda<p>Idade: 5 Anos</p> Femea </li>
+            <li><img src="{% static 'img/im22.jpg' %}" alt="">Nome: Jorge<p>Idade: 1 Ano</p> Macho </li>
+            <li><img src="{% static 'img/im23.jpg' %}" alt="">Nome: Salem<p>Idade: 1 Ano</p> Macho </li>
+            
+            <div>
+                <a href="">Próxima página</a>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+            </div>
+            
+        </ul>
+        
+    </div>
+</form> -->
 
-                
-                <div class='pets'>
-                        <ul id="lista">
-                                        
-                    
-                                        
-                                <li><img src="{% static 'img/gato01.jpg' %}" alt="">Nome: Fubá <p>Idade: 1 Ano</p> Femea </li>
-                                <li><img src="{% static 'img/img02.jpg' %}" alt="">Nome: Tesla<p>Idade: 6 Meses</p> Macho </li>
-                                <li><img src="{% static 'img/img03.jpg' %}" alt="">Nome: Blues<p>Idade: 4 Anos</p> Macho </li>
-                                <li><img src="{% static 'img/img13.jpg' %}" alt="">Nome: Baco<p>Idade: 3 Anos</p> Macho </li>
-                                <li><img src="{% static 'img/img15.jpg' %}" alt="">Nome: Bento<p>Idade: 5 Anos</p> Macho </li>
-                                <li><img src="{% static 'img/img07.jpg' %}" alt="">Nome: Jazz<p>Idade: 2 Anos</p> Femea </li>
-                                <li><img src="{% static 'img/img010.jpg' %}" alt="">Nome: Puck<p>Idade: 2 Anos</p> Femea </li>
-                                <li><img src="{% static 'img/img09.jpg' %}" alt="">Nome: Tobi<p>Idade: 1 Ano</p> Macho </li>
-                                <li><img src="{% static 'img/img14.jpg' %}" alt="">Nome: Guinho<p>Idade: 1 Ano</p> Macho </li>
-                                <li><img src="{% static 'img/cao1.jpg' %}" alt="">Nome: Monk<p>Idade: 3 Meses</p> Macho </li>
-                                <li><img src="{% static 'img/gato03.jpg' %}" alt="">Nome: Frajola<p>Idade: 1 Ano</p> Macho </li>
-                                <li><img src="{% static 'img/img011.jpg' %}" alt="">Nome: Sissy<p>Idade: 6 Anos</p> Femea </li>
-                                <li><img src="{% static 'img/gato02.jpg' %}" alt="">Nome: Tina<p>Idade: 9 Meses</p> Femea </li>
-                                <li><img src="{% static 'img/cao.jpg' %}" alt="">Nome: Doug<p>Idade: 1 Ano</p> Macho </li>
-                                <li><img src="{% static 'img/img012.png' %}" alt="">Nome: Luna<p>Idade: 3 Anos</p> Femea </li>
-                                <li><img src="{% static 'img/img13.jpg' %}" alt="">Nome: Simba<p>Idade: 3 Anos</p> Macho </li>
-                                <li><img src="{% static 'img/im20.jpg' %}" alt="">Nome: Bela<p>Idade: 1 Ano</p> Femea </li>
-                                <li><img src="{% static 'img/im21.jpg' %}" alt="">Nome: Mafalda<p>Idade: 5 Anos</p> Femea </li>
-                                <li><img src="{% static 'img/im22.jpg' %}" alt="">Nome: Jorge<p>Idade: 1 Ano</p> Macho </li>
-                                <li><img src="{% static 'img/im23.jpg' %}" alt="">Nome: Salem<p>Idade: 1 Ano</p> Macho </li>
-                               
-                                        <div>
-                                            <a href="">Próxima página</a>
-                                        <a href="">1</a>
-                                        <a href="">2</a>
-                                        <a href="">3</a>
-                                        <a href="">4</a>
-                                        </div>
-                                        
-                                    </ul>
-                
+{% for Animal in animais %}
+
+
+
+<div class="card">
+    <div>
+        <img src="{{Animal.foto.url}}" alt="">
+    </div>
+    <h3>{{Animal.nome}}</h3>
+    <p>Tamanho: {{Animal.tamanho}}</p>
+</li>
+<p>Idade: {{Animal.idade}}</p>
+
+</div>
+
+{% endfor %}
+
+<a href="">Próxima página</a>
+<a href="">1</a>
+<a href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+</div>
+
+
+
+
+
+{% endblock %}
+
+
+
+<!-- {% for Animal in animais %}
+    
+    <ul>
+        <li>
+            
+            
+            <div class="card">
+                <div>
+                    <img src="{{Animal.foto.url}}" alt="">
                 </div>
-            </form>
-
+                <h3>{{Animal.nome}}</h3>
+                <p>Tamanho: {{Animal.tamanho}}</p>
+            </li>
+            <p>Idade: {{Animal.idade}}</p>
             
-            
-            {% endblock %}
-            
-
-          
-                <!-- {% for Animal in animais %}
-                
-                <ul>
-                    <li>
-                        
-                        
-                        <div class="card">
-                            <div>
-                                <img src="{{Animal.foto.url}}" alt="">
-                            </div>
-                            <h3>{{Animal.nome}}</h3>
-                            <p>Tamanho: {{Animal.tamanho}}</p>
-                        </li>
-                        <p>Idade: {{Animal.idade}}</p>
-                        
-                    </div>
-                </ul>
-                {% endfor %} -->
-                
-                
-            
+        </div>
+    </ul>
+    {% endfor %} -->

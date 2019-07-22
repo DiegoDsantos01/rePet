@@ -12,11 +12,11 @@ from rePet.forms import CadastroForm, LoginUsuario
 # Create your views here.
 
 def mostrar_index(request):
-    animais = Animal.objects.all()
-    return render(request, 'index.html', {'animais': animais})
+    return render(request, 'index.html')
 
 def mostrar_adote(request):
-    return render(request, 'adote.html')
+    animais = Animal.objects.all()
+    return render(request, 'adote.html', {'animais': animais})
 
 def mostrar_cadastro(request):
     cad = Cadastro.objects.all()
@@ -32,7 +32,7 @@ def mostrar_cadastro(request):
         'form': formulario,
         'msg': msg,
     }
-    return render(request, 'cadastro.html', contexto, {'cad': cad})
+    return render(request, 'cadastro.html')
 
 
 @login_required(login_url='/login/')
@@ -54,7 +54,7 @@ def submit_login(request):
             login(request, user)
             return redirect('/')
         else:
-            messages.error(request, 'Usuário/Senha inválidos. Favor tentar novamente.')
+            messages.error(request, 'Usuário ou senha inválidos. Tente novamente.')
     return redirect('/login/')
    
 
