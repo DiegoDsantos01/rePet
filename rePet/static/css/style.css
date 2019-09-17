@@ -1,19 +1,21 @@
 body{
     background-color: white ;
     background: repeating-linear-gradient(
-        45deg,
-        white,
-        white 2px,
-        #fafafa 2px,
-        #fafafa 5px
-        );
-        margin: 0;
-        overflow-x: hidden;
+    45deg,
+    white,
+    white 2px,
+    #fafafa 2px,
+    #fafafa 5px
+    );
+    margin: 0;
+    overflow-x: hidden;
 }
 
 html{
-        scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
+/* Css da nav */
 nav{
     align-items: center;
     background-color: #fafafa;
@@ -48,48 +50,23 @@ nav img{
     height: 100%;
 }
 
-#divPesq{
-    background-color: white;
-    border:solid 2px #f8b483;
-    border-radius:10px;
-    height:30px;
-    width:300px;
-  }
-   
-  #text{
-    background-color:transparent;
-    border:none;
-    float:left;
-    font-size:18px;
-    height:30px;
-    padding-left:5px; 
-    width:200px;
-  }
-   
-  #btnBusca{
-    background:#f8b483;
-    border:none;
-    border-radius:0 7px 7px 0;
-    float:left;
-    font-weight:bold;
-    height:32px;
-    width:70px;
-  }
-   
+/* Fim do css da nav */
 
+/* Inicio do css da header */
 header{
     background-color: black;
-	background-image: url("../img/header6.jpg")  ;
-	bottom:25%; 
+    background-image: url("../img/header6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    bottom:25%; 
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 700px;
     justify-content: center;    
-	top: 9%; 
+    top: 9%; 
     width: 100%;
-	
 }
-
 
 #divTexto h1{
     align-items: center;
@@ -110,62 +87,62 @@ header{
 
 #login{
     background: -moz-linear-gradient(
-        top,
-        #f8c7a9 0%,
-        #c26b38);
+    top,
+    #f8c7a9 0%,
+    #c26b38);
     background: -webkit-gradient(
-        linear, left top, left bottom,
-        from(#f8c7a9),
-        to(#c26b38));
+    linear, left top, left bottom,
+    from(#f8c7a9),
+    to(#c26b38));
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
     border-radius: 12px;
     border: 1px solid #f8c7a9;
     -moz-box-shadow:
-        0px 1px 3px rgba(252,252,252,0.5),
-        inset 0px 0px 1px rgba(255,255,255,0.7);
+    0px 1px 3px rgba(252,252,252,0.5),
+    inset 0px 0px 1px rgba(255,255,255,0.7);
     -webkit-box-shadow:
-        0px 1px 3px rgba(252,252,252,0.5),
-        inset 0px 0px 1px rgba(255,255,255,0.7);
+    0px 1px 3px rgba(252,252,252,0.5),
+    inset 0px 0px 1px rgba(255,255,255,0.7);
     box-shadow:
-        0px 1px 3px rgba(252,252,252,0.5),
-        inset 0px 0px 1px rgba(255,255,255,0.7);
+    0px 1px 3px rgba(252,252,252,0.5),
+    inset 0px 0px 1px rgba(255,255,255,0.7);
     text-shadow:
-        0px -1px 0px rgba(000,000,000,0.4),
-        0px 1px 0px rgba(255,255,255,0.3);
-        cursor: pointer;
+    0px -1px 0px rgba(000,000,000,0.4),
+    0px 1px 0px rgba(255,255,255,0.3);
+    cursor: pointer;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     padding: 11px 24px;
     margin-left: 3%;
 }
-    
+
 button{
     background: -moz-linear-gradient(
-        top,
-        #f8c7a9 0%,
-        #c26b38);
+    top,
+    #f8c7a9 0%,
+    #c26b38);
     background: -webkit-gradient(
-        linear, left top, left bottom,
-        from(#f8c7a9),
-        to(#c26b38));
+    linear, left top, left bottom,
+    from(#f8c7a9),
+    to(#c26b38));
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
     border-radius: 12px;
     border: 1px solid #f8c7a9;
     -moz-box-shadow:
-        0px 1px 3px rgba(252,252,252,0.5),
-        inset 0px 0px 1px rgba(255,255,255,0.7);
+    0px 1px 3px rgba(252,252,252,0.5),
+    inset 0px 0px 1px rgba(255,255,255,0.7);
     -webkit-box-shadow:
-        0px 1px 3px rgba(252,252,252,0.5),
-        inset 0px 0px 1px rgba(255,255,255,0.7);
+    0px 1px 3px rgba(252,252,252,0.5),
+    inset 0px 0px 1px rgba(255,255,255,0.7);
     box-shadow:
-        0px 1px 3px rgba(252,252,252,0.5),
-        inset 0px 0px 1px rgba(255,255,255,0.7);
+    0px 1px 3px rgba(252,252,252,0.5),
+    inset 0px 0px 1px rgba(255,255,255,0.7);
     text-shadow:
-        0px -1px 0px rgba(000,000,000,0.4),
-        0px 1px 0px rgba(255,255,255,0.3);
+    0px -1px 0px rgba(000,000,000,0.4),
+    0px 1px 0px rgba(255,255,255,0.3);
     color: #050505;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
@@ -173,167 +150,21 @@ button{
     margin-left: 3%;
     padding: 11px 24px;
 }
+/* Fim do css da header */
 
-#divSomos{
+/* Inicio do css da div adotar */
+
+.MotivoAdotar #adotar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: column;
-    text-align: center;
-    text-transform: unset;
-
-}
-
-h2{
-    font-family: 'Amatic SC', cursive;
-    font-size: 60pt;
-    margin: 0;
-}
-
-#divSobre{
-    font-size: 11pt;
-    height: 100px;
-    width: 400px;
-
-}
-
-section p{
-    font-size: 16pt;
-}
-
-
-form{
-    align-items: center;
-    border-radius: 20px;
-    display: flex;
-    height: 100px;
-    justify-content: space-around;
-    margin-left: 10%;
-    margin-top: 300px;
-    width: 80%;
-}
-
-form img{
-    display: flex;
-    height: 50px;
-    width: 50px;
-}
-
-
-#lista{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-}
-#lista img{
-    cursor: pointer;
-    height: 150px;
-    width: 150px;
-}
-
-aside #busca{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#pesquisa{
-    border-radius: 20px;
-    height: 30px;
-    margin-bottom: 10px;
-    width: 200px;
-}
-
-
-aside ul{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-ul {
-    list-style-type: none;
-    }
-
-.bot{
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    
-}
-
-
-.card{
-    align-items: center;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 200px;
-    justify-content: space-evenly;
-    padding-top: 100px;
-    width: 200px;
-}
-
-.card:hover{
-    border-radius: 5px;
-    box-shadow: 2px 2px 8px black;
-    cursor: pointer;
-}
-
-li:hover{
-    align-items: center;
-    border-radius: 20%;
-    box-shadow: 2px 2px 5px 5px white;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    justify-content: space-around;
-    transition: 1s;
-    width: 200px;
-}
-
-
-li p{
-    text-align: center;
-    
-}
-
-
-aside img{
-    height: 100px;
-    width: 100px;
-}
-
-p{
-    margin: 0;
-}
-
-#section2{
-    align-items: center;
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    height: 400px;
-    padding-bottom: 100px;
-    width: 100%;
-    
-}
-
-#section2 div{
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 350px;
 }
 
 #adotar{
     align-items: center;
     display: flex;
     justify-content: center;
-    padding-bottom: -30px;
     text-align: center;
     
 }
@@ -360,8 +191,29 @@ p{
     cursor: pointer;
     height: 400px;
     width: 400px;
-
+    
 }
+
+.section2{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    padding-bottom: 100px;
+    width: 100%;
+    
+}
+
+.section2 div{
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+}
+
+/* Fim do css da div adotar */
+
+/* Inicio do css da section */
 
 section{
     align-items: center;
@@ -376,7 +228,7 @@ section img{
     border-radius: 30px;
     width: 300px;
 }
-    
+
 section #div{
     align-items: center;
     display: flex;
@@ -387,36 +239,34 @@ section #div{
     width: 40%;
 }
 
-.pets{
-    align-items: center;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
-    height: 500px;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+
+#divSomos{
+    flex-direction: column;
     text-align: center;
-    width: 100%;
-}
-.pets img{
-    align-items: center;
-    border-radius: 20px;
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 200px;
-    width: 200px;
+    text-transform: unset;
+    
 }
 
-.pets p{
-    font-size: 10pt;
-    text-align: center;
+h2{
+    font-family: 'Amatic SC', cursive;
+    font-size: 60pt;
+    margin: 0;
 }
 
+#divSobre{
+    font-size: 11pt;
+    height: 100px;
+    width: 400px;
+    
+}
+
+section p{
+    font-size: 16pt;
+}
+
+/* Fim do css da section */
+
+/* Inicio do css do footer */
 
 footer{
     align-items: center;
@@ -440,44 +290,27 @@ footer h5{
     font-family: 'Montserrat', sans-serif;
     font-size: 10pt;
 }
+/* Fim do css do footer */
 
-.container{
+.card{
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 800px;
-    justify-content: space-around;
-    text-align: center;
-    width: 100%;
-}
-.container img{
-    border-radius: 20px;
-    flex-direction: column;
-    height: 350px;
-    margin-left: 10%;
-    text-align: center;
-    width: 600px;
-}
-
-.imagem div{
-    align-items: center;
-    background-color: orange;
-    display: flex;
-    height: 400px;
-    justify-content: space-around;
-    text-align: center;
-    width: 1500px;
-    
-}
-
-.textin h6{
     background-color: white;
-    border-radius: 10px;
+    display: flex;
     flex-direction: column;
-    font-family: 'Comfortaa', cursive;
-    font-size: 15pt;
+    flex-wrap: wrap;
     height: 200px;
-    padding-top: 50px;
-    text-align: center;
-    width: 300px;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    width: 200px;
+}
+
+.card:hover{
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+}
+
+
+p{
+    margin: 0;
 }
