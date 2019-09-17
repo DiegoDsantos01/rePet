@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-# Create your models here.
+# Classe para cadastrar os animais no site
 
 class Animal(models.Model):
 
@@ -31,6 +31,8 @@ class Animal(models.Model):
     def __str__(self):
         return self.nome
 
+# Classe para a página de cadastro do usuario
+
 class Cadastro(models.Model):
 
     nome = models.CharField(max_length=30)
@@ -42,6 +44,8 @@ class Cadastro(models.Model):
 
     def __str__(self):
         return self.nome
+
+# Classe para a tela de login do usuario
 
 class Usuario(models.Model):
     email = models.EmailField()
